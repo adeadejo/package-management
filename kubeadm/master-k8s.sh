@@ -55,7 +55,8 @@ apt-get install containerd.io -y
 #Note: Containerd uses a configuration file located in /etc/containerd/config.toml for specifying daemon level options.
 #The default configuration can be generated via below command.
 
-containerd config default > /etc/containerd/config.toml
+sudo sh -c "containerd config default > /etc/containerd/config.toml"
+
 
 # Run following command to update configure cgroup as systemd for contianerd.
 
